@@ -27,7 +27,7 @@ while processing.run("native:selectbylocation", {
             lyr.crs(),
             "ESRI Shapefile",
             True)
-#       add new layer to 
+#       add new layer to project
         new_layer = QgsVectorLayer('{output_path}'.format(**vars())+'{lyr_name}'.format(**vars())+".shp",'{lyr_name}'.format(**vars())+"_only_selected","ogr")
         if not new_layer.isValid():
             print("Layer failed to load!")
