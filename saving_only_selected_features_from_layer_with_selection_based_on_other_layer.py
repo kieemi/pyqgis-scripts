@@ -16,7 +16,7 @@ while processing.run("native:selectbylocation", {
     'INTERSECT': '{layer_to_select_name}'.format(**vars()),
     'METHOD': 0}):
 #    check for empty selection
-    if temp_lyr.selectedFeatureCount()<1:
+    if lyr.selectedFeatureCount()<1:
         break
     else:
 #        write a shapefile on disk
